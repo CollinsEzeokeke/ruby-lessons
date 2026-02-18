@@ -83,3 +83,21 @@ for i in arr do
 end
 
 puts a       # is it accessible here?
+
+name = puts "Please enter your name: "
+name = gets.chomp
+puts "here a constant variable (USERS_NAME) was created and assigned to the name variable"
+USERS_NAME = name
+puts "Hello #{USERS_NAME}! Welcome to the program!"
+
+age = puts "Please enter your age: "
+age = gets.chomp
+puts "here a constant variable (USERS_AGE) was created and assigned to the age variable"
+USERS_AGE = age
+puts "You are #{USERS_AGE} years old! Welcome to the program!"
+
+email = puts "Please enter your email: "
+email = gets.chomp
+puts "here a constant variable (USERS_EMAIL) was created and assigned to the email variable"
+USERS_EMAIL = email
+puts "You are #{USERS_NAME}, with your email #{USERS_EMAIL}, and you are #{USERS_AGE} years old! Welcome to the program!"
