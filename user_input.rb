@@ -101,3 +101,27 @@ email = gets.chomp
 puts "here a constant variable (USERS_EMAIL) was created and assigned to the email variable"
 USERS_EMAIL = email
 puts "You are #{USERS_NAME}, with your email #{USERS_EMAIL}, and you are #{USERS_AGE} years old! Welcome to the program!"
+
+
+# Global Variables in ruby accesible to codes anywhere below it's declaration
+
+$global_variable = "this is global"
+puts "this is the global variable: #{$global_variable}"
+
+
+# instance variables in ruby are accessible to the instance of the class
+
+class Person
+    attr_reader :name, :age, :email
+
+    def initialize(name, age, email)
+        @name = name
+        @age = age
+        @email = email
+    end
+end
+
+person = Person.new(USERS_NAME, USERS_AGE, USERS_EMAIL)
+puts "this is the instance variable: #{person.name}"
+puts "this is the instance variable: #{person.age}"
+puts "this is the instance variable: #{person.email}"
