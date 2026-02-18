@@ -1,20 +1,20 @@
 
-aFile = File.new("user_input.rb", "r")
-if aFile
-   content = aFile.sysread(20)
-   puts content
-else
-   puts "Unable to open file!"
-end
+# aFile = File.new("user_input.rb", "r")
+# if aFile
+#    content = aFile.sysread(20)
+#    puts content
+# else
+#    puts "Unable to open file!"
+# end
 
-age = File.new("age.rb", "r")
+# age = File.new("age.rb", "r")
 
-if age
-    content = age.sysread(age.stat.size)
-    puts content
-else
-    puts "Error: Could not open file"
-end
+# if age
+#     content = age.sysread(age.stat.size)
+#     puts content
+# else
+#     puts "Error: Could not open file"
+# end
 
 printFile = File.new("input.txt", "r+")
 
