@@ -125,3 +125,4 @@ person = Person.new(USERS_NAME, USERS_AGE, USERS_EMAIL)
 puts "this is the instance variable: #{person.name}"
 puts "this is the instance variable: #{person.age}"
 puts "this is the instance variable: #{person.email}"
+
