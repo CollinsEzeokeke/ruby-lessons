@@ -12,11 +12,11 @@ attack_by_sea = true
 
 if attack_by_land == true
     puts "release the goat"
-  elsif attack_by_sea == true
+elsif attack_by_sea == true
     puts "release the shark"
-  else
+else
     puts "release Kevin the flying octopus "
-  end
+end
   
 #   true or false statements using equations
 
@@ -37,3 +37,4 @@ puts a.equal?(b) #=> false
 
 puts a.eql?(c) #=> false
 puts a.equal?(c) #=> false
+ 
